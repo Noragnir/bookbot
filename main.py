@@ -27,8 +27,8 @@ def main():
                 if char.isalpha():
                         chara_lists.append({"chara": char, "num": count})
         chara_lists.sort(reverse=True, key=sort_on)
-        print("--- Begin reports of books/books/frankenstein.txt ---")
-        print(f"{word_count} words found in the document")
+        print("--- Begin report of books/frankenstein.txt ---")
+        print(f"{word_count} words found in the document\n")
         for chara_dict in chara_lists:
                 print(f"The '{chara_dict['chara']}' character was found {chara_dict['num']} times")
         print("--- End report ---")
